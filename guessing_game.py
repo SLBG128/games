@@ -49,14 +49,12 @@ def choices():      #User choice
 if __name__ == "__main__":
     print_logo()
     choices()
-    choice = input()
-    try:
-        choice = int(choice)
-    except:
-        print("Invalid input")
-    if choice == 1:
-        main()
-    elif choice == 2:
-        exit()
-    else:
-        print("Invalid input")
+    while True:
+        choice = str(input())
+        if choice == str(1):
+            main()
+            break
+        elif choice == str(2):
+            exit()
+        else:
+            print("Invalid input")
