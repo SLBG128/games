@@ -44,7 +44,7 @@ def print_logo():           # The logo
 
 def choices():      #User choice
     print("Press[1] to start the game")
-    print("Press[2] to start the game")
+    print("Press[2] to exit the game")
 
 if __name__ == "__main__":
     print_logo()
