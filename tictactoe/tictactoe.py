@@ -83,6 +83,7 @@ def main():
                     turn += 1
         if turn > 8 and checkWin(game_board) is False:
             print("DRAW!!")
+            start = input("Enter 0 to play again and any other button to exit")
         elif turn <= 8 and checkWin(game_board) is True:
             checkWin(game_board)
             start = input("Enter 0 to play again and any other button to exit")
