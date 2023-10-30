@@ -27,34 +27,26 @@ def checkWin(game_board):
     for i in range(3):
         if game_board[i][0] == game_board[i][1] == game_board[i][2]:
             if game_board[i][0] == "O":
-                printBoard(game_board)
                 print("Player1 WIN!")
             elif game_board[i][0] == "X":
-                printBoard(game_board)
                 print("Player2 WIN!")
             return True
         if game_board[0][i] == game_board[1][i] == game_board[2][i]:
             if game_board[0][i] == "O":
-                printBoard(game_board)
                 print("Player1 WIN!")
             elif game_board[0][i] == "X":
-                printBoard(game_board)
                 print("Player2 WIN!")
             return True
     if game_board[0][0] == game_board[1][1] == game_board[2][2]:
         if game_board[0][0] == "O":
-            printBoard(game_board)
             print("Player1 WIN!")
         elif game_board[0][0] == "X":
-            printBoard(game_board)
             print("Player2 WIN!")
         return True
     elif game_board[0][2] == game_board[1][1] == game_board[2][0]:
         if game_board[0][2] == "O":
-            printBoard(game_board)
             print("Player1 WIN!")
         elif game_board[0][2] == "X":
-            printBoard(game_board)
             print("Player2 WIN!")
         return True
     else:
